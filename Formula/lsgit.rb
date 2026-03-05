@@ -5,21 +5,21 @@
 class Lsgit < Formula
   desc "ls for git repositories — list subdirs with branch and status"
   homepage "https://github.com/itinance/lsgit"
-  version "0.1.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/itinance/lsgit/releases/download/v0.1.0/lsgit_darwin_amd64.tar.gz"
-      sha256 "1616394940cba033aaea2af3d6e0961ea4c4ad03522fccfb3bd199bbd6dc2e6d"
+      url "https://github.com/itinance/lsgit/releases/download/v0.3.0/lsgit_darwin_amd64.tar.gz"
+      sha256 "6841c7a7dbb39f7e31b55d6539111c82ffe2e46edf7ef25547bfafd9dd1d2834"
 
       define_method(:install) do
         bin.install "lsgit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/itinance/lsgit/releases/download/v0.1.0/lsgit_darwin_arm64.tar.gz"
-      sha256 "34d74afb2e0420168cdc5d43a03167cdcfef8a2c0299533df578bedae20dccd2"
+      url "https://github.com/itinance/lsgit/releases/download/v0.3.0/lsgit_darwin_arm64.tar.gz"
+      sha256 "aac43dcf65a65b7306bd446d6290ffb9b887c15002e4c637b8327ef828f28250"
 
       define_method(:install) do
         bin.install "lsgit"
@@ -29,15 +29,15 @@ class Lsgit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/itinance/lsgit/releases/download/v0.1.0/lsgit_linux_amd64.tar.gz"
-      sha256 "93b2796e3bbd42fb41c0dc3004f9eb9a17b776c1e9b7fd285d04ac42e7286d61"
+      url "https://github.com/itinance/lsgit/releases/download/v0.3.0/lsgit_linux_amd64.tar.gz"
+      sha256 "9a10e73bf4d23fe021165317aeb91016dbd4f99abbe5278b3792d051f1299aa3"
       define_method(:install) do
         bin.install "lsgit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/itinance/lsgit/releases/download/v0.1.0/lsgit_linux_arm64.tar.gz"
-      sha256 "a1e37dff3f4ebe7aeddb694c76e3bd8d8deadcf36188a9208caee3baaa30b99c"
+      url "https://github.com/itinance/lsgit/releases/download/v0.3.0/lsgit_linux_arm64.tar.gz"
+      sha256 "fa1074e7118a720358294b4ea30edb74306950524489f392479284dec9cea61f"
       define_method(:install) do
         bin.install "lsgit"
       end
