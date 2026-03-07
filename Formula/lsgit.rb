@@ -5,21 +5,21 @@
 class Lsgit < Formula
   desc "ls for git repositories — list subdirs with branch and status"
   homepage "https://github.com/itinance/lsgit"
-  version "0.2.0"
+  version "0.3.0-2-gf985134"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/itinance/lsgit/releases/download/v0.2.0/lsgit_darwin_amd64.tar.gz"
-      sha256 "a6ae90cf7b10e5c20d8ece6c03a8725356be96f3d40b59fab58f03c53c6880db"
+      url "https://github.com/itinance/lsgit/releases/download/v0.3.0-2-gf985134/lsgit_darwin_amd64.tar.gz"
+      sha256 "bba73e98989acc45ab55c1f8d1f14e10f53ce27031170c0558957da0921a6baf"
 
       define_method(:install) do
         bin.install "lsgit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/itinance/lsgit/releases/download/v0.2.0/lsgit_darwin_arm64.tar.gz"
-      sha256 "3a4a5214312cb2ec25523a99331c09d77280ec9d35fa8429499bddffe1e5c0d9"
+      url "https://github.com/itinance/lsgit/releases/download/v0.3.0-2-gf985134/lsgit_darwin_arm64.tar.gz"
+      sha256 "1a57bc5939b6992b76934ecb89a2d9e5ade8a4e6e779dd01953bdc72e1bfc3c2"
 
       define_method(:install) do
         bin.install "lsgit"
@@ -29,15 +29,15 @@ class Lsgit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/itinance/lsgit/releases/download/v0.2.0/lsgit_linux_amd64.tar.gz"
-      sha256 "862a057deb3b7153b7bcef969dfcb4de5345659620edb89c7e5d327f3365cccb"
+      url "https://github.com/itinance/lsgit/releases/download/v0.3.0-2-gf985134/lsgit_linux_amd64.tar.gz"
+      sha256 "4712dd361d7093fd4add48cc541643d2f177fe31a432565ba1daca034b822a43"
       define_method(:install) do
         bin.install "lsgit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/itinance/lsgit/releases/download/v0.2.0/lsgit_linux_arm64.tar.gz"
-      sha256 "eb44d5098a9a90f6deacde941df42123bb07a66f7da6cf182a960ba4390532fb"
+      url "https://github.com/itinance/lsgit/releases/download/v0.3.0-2-gf985134/lsgit_linux_arm64.tar.gz"
+      sha256 "2887dfd29c55b603b4543f0bc9df9d92218c507628636e040e5741328d0f1574"
       define_method(:install) do
         bin.install "lsgit"
       end
