@@ -2,7 +2,7 @@ class Macmem < Formula
   desc "macOS CLI: heaviest apps, swap usage, and browser tabs"
   homepage "https://github.com/itinance/macmem-monitor"
   url "https://github.com/itinance/macmem-monitor/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "1c7821c76444df02df1316379f1f1ed1c15268f6456a8c0d3c757f563a6beb3a"
+  sha256 "cfccee5e3b6fdda73252c2ff5fa5f5016f682bd1baf4a662705db53d98f60ff2"
   license "MIT"
 
   depends_on xcode: ["15.0", :build]
