@@ -11,7 +11,7 @@ class Lsgit < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/itinance/lsgit/releases/download/v0.6.0/lsgit_darwin_amd64.tar.gz"
-      sha256 "cbdd4e5752849e94c5752f3d2c8fb7ecb94c9cfa0a6a249a5e751a8149eb4c37"
+      sha256 "cac616958c0ddaf8f3b707f13bd2ae5150adac3be64b548bddd80abef3d72997"
 
       define_method(:install) do
         bin.install "lsgit"
@@ -19,7 +19,7 @@ class Lsgit < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/itinance/lsgit/releases/download/v0.6.0/lsgit_darwin_arm64.tar.gz"
-      sha256 "81993cc0208f488303d3079b8d93de319f30845a6dbbbce3ec7ca9a3d350e95b"
+      sha256 "679707d3a9df29a3c9cb4dcd7726360c2312300145add5925670c8968a885fb8"
 
       define_method(:install) do
         bin.install "lsgit"
@@ -30,14 +30,14 @@ class Lsgit < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/itinance/lsgit/releases/download/v0.6.0/lsgit_linux_amd64.tar.gz"
-      sha256 "f40b7641f5aeb6826740cb428c8b65e5d39b525589552f21e16f93fe47bc2d67"
+      sha256 "e2ec0327b91d8e1acada6a1ade61863e18461a2a151553e9463f853e559eac7e"
       define_method(:install) do
         bin.install "lsgit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/itinance/lsgit/releases/download/v0.6.0/lsgit_linux_arm64.tar.gz"
-      sha256 "db980b3e5b00fbd8aee0f124c28b676b31d66db077198451e69ba967e06dff75"
+      sha256 "05c99f238b8e49b911f74be2214911d67823ef252c936abb8b44fba13ea5f288"
       define_method(:install) do
         bin.install "lsgit"
       end
